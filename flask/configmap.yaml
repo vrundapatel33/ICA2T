@@ -1,0 +1,10 @@
+# flask-configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: flask-config
+  namespace: flask-app
+data:
+  PGDB_HOST: "postgres-db-service.postgres-db.svc.cluster.local"
+  REDIS_HOST: "redis-cache-service.redis-cache.svc.cluster.local"
+  REDIS_PORT: "6379"

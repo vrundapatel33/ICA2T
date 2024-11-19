@@ -1,0 +1,5 @@
+# .sops.yaml
+creation_rules:
+  - gcp_kms: projects/vp33-400500/locations/northamerica-northeast1/keyRings/new-keyring/cryptoKeys/mariadb-key
+    path_regex: '.*\.yaml$'
+    encrypted_regex: '^(data|stringData)$'
